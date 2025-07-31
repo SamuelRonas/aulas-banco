@@ -1,10 +1,8 @@
-const prompt = require("prompt-sync")(); // Correto para Node.js com CommonJS
+const prompt = require("prompt-sync")(); 
 
-function iniciar() {
+function banco() {
 
     var saldo = 0;
-
-    console.log("Oi, que bom te ver por aqui! O que deseja fazer hoje");
 
     console.log("Digite 1 para Depositar, digite 2 para Sacar e 3 para Mostrar seu saldo");
 
@@ -31,8 +29,6 @@ function iniciar() {
     function sacar(valor) {
     saldo = saldo - valor;
     console.log(saldo)
-
-
     }
 
 
@@ -45,4 +41,4 @@ function iniciar() {
 
 
 
-iniciar();
+banco();
